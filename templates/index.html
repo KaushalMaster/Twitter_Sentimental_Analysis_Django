@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Upload Your File</h3>
+      <div class="drag-area">
+        <div class="icon">
+          <i class="fas fa-images"></i>
+        </div>
+        <span class="header">Drag and Drop</span>
+        <span class="header">OR <span class="button">Browse</span></span>
+        <form action="" method="POST">
+          <input type="file" name="input_file" id="" hidden />
+        </form>
+
+        <span class="support">Supports: JPEG, JPG, PNG</span>
+      </div>
+    </div>
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
